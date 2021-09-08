@@ -1,0 +1,51 @@
+{
+  "name": "massivelive.fun",
+  "author": "Matthew Lance Fuller <matthewlancefuller@gmail.com>",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A personal website for showcasing projects and displaying contact information.",
+  "license": "MIT, Apache 2.0, or BSD3",
+  "main": "./website/static/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/massivelivefun/massivelive.fun.git"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "cleanup-pkg": "rm -rf ./scripts/pkg && rm -rf ./public/pkg",
+    "dev": "webpack-dev-server --port 9000 --open",
+    "deliver": "rm -rf ./scripts/pkg && cp -r ./rust/pkg ./scripts && rm -rf ./public/pkg && cp -r ./rust/pkg ./public",
+    "rust": "cd rust && wasm-pack build --target web && cd .. && rm -rf ./scripts/pkg && cp -r ./rust/pkg ./scripts && rm -rf ./public/pkg && cp -r ./rust/pkg ./public",
+    "zola": "zola serve"
+  },
+  "type": "commonjs",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "semi": true,
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "bracketSpacing": true
+  },
+  "dependencies": {
+    "core-js": "^3.17.2",
+    "gsap": "^3.7.1",
+    "ogl": "^0.0.74"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-typescript": "^7.15.0",
+    "@wasm-tool/wasm-pack-plugin": "1.5.0",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.27.5",
+    "html-webpack-plugin": "^5.3.2",
+    "prettier": "^2.3.2",
+    "text-encoding": "^0.7.0",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
