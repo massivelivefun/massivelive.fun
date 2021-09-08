@@ -1,0 +1,10 @@
+# The rest
+*           text=auto eol=lf
+
+# Documentation
+*.md        text
+LICENSE     text
+
+# Media
+*.jpg       binary
+*.png       binary
