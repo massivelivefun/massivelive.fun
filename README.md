@@ -2,7 +2,7 @@
 
 A personal website for showcasing projects and displaying contact information.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a58d9715-1884-4ceb-be62-4a396d49de11/deploy-status)](https://app.netlify.com/sites/massivelivefun/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/928d0a1e-1a33-44b5-980e-1552bece9f27/deploy-status)](https://app.netlify.com/sites/massivelivefun/deploys)
 
 ## Tech Stack
 
