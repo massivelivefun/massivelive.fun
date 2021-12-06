@@ -1,5 +1,5 @@
 # Authors
 
-See the github [massivelive.fun Contributors][contributors] list.
+See the github [massivelive.fun contributors][contributors] list.
 
-[contributors]: https://github.com/dezzyne/propagation/graphs/contributors
+[contributors]: https://github.com/massivelivefun/massivelive.fun/graphs/contributors
