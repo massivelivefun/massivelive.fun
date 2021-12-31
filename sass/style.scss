@@ -1,6 +1,10 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
+h1 {
+  position: center;
+}
+
 body {
   background-color: black;
   color: $primary-color;
