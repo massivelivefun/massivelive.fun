@@ -110,5 +110,6 @@ dist/
 target/
 public/
 
-# MacOS
+# File system
 .DS_Store
+desktop.ini
