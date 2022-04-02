@@ -14,5 +14,10 @@ body {
 }
 
 a, a:visited {
-    color: #333;
+    color: #ddd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
