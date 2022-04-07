@@ -1,12 +1,24 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
+html {
+    background-color: black;
+}
+
+section {
+    background-color: black;
+}
+
 h1 {
   position: center;
 }
 
+canvas {
+    background-color: red;
+}
+
 body {
-  background-color: black;
+  background-color: blue;
   color: $primary-color;
   font: 100% $font-stack;
   margin: 0;
