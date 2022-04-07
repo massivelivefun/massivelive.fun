@@ -16,7 +16,8 @@
     "dev": "webpack-dev-server --port 9000 --open",
     "deliver": "rm -rf ./scripts/pkg && cp -r ./rust/pkg ./scripts && rm -rf ./public/pkg && cp -r ./rust/pkg ./public",
     "rust": "cd rust && wasm-pack build --target web && cd .. && rm -rf ./scripts/pkg && cp -r ./rust/pkg ./scripts && rm -rf ./public/pkg && cp -r ./rust/pkg ./public",
-    "zola": "zola serve"
+    "zola": "zola serve",
+    "dev2": "zola build && npm run build && npm run dev"
   },
   "type": "commonjs",
   "prettier": {
