@@ -9,14 +9,15 @@ module.exports = (env, args) => {
   return {
     entry: './scripts/index.js',
     output: {
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'dist/'),
+      publicPath: 'dist/',
       filename: isProductionMode
         ? '[name].[contenthash].js'
         : '[name].[hash].js',
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './templates/index.html',
+        template: './templates/base.html',
       }),
       new webpack.ProvidePlugin({
         TextDecoder: ['text-encoding', 'TextDecoder'],
@@ -25,7 +26,7 @@ module.exports = (env, args) => {
       new WasmPackPlugin({
         crateDirectory: path.resolve(__dirname, 'rust'),
         extraArgs: '--target web',
-        outDir: "pkg",
+        outDir: "../public/pkg",
         outName: "massivelive_fun"
       }),
     ],
