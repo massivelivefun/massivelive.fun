@@ -1,8 +1,8 @@
 extern crate wasm_bindgen;
 
+use std::f64;
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::JsCast;
-use std::f64;
 
 #[wasm_bindgen]
 extern "C" {
@@ -58,18 +58,14 @@ pub fn start() {
 }
 
 #[wasm_bindgen]
-pub struct Client {
-
-}
+pub struct Client {}
 
 #[wasm_bindgen]
 impl Client {
     #[wasm_bindgen(constructor)]
     pub fn new() -> Self {
         log("New was hit");
-        Self {
-
-        }
+        Self {}
     }
 
     pub fn update(&mut self, _time: f32, _height: f32, _width: f32) -> Result<(), JsValue> {
@@ -77,7 +73,5 @@ impl Client {
         Ok(())
     }
 
-    pub fn render(&self) {
-
-    }
+    pub fn render(&self) {}
 }

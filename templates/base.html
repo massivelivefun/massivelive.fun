@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <base href="/" />
-    <!-- <link rel="icon" href="data:;base64,iVBORwOKGO="/> -->
+    <!-- <link rel="icon" href="data:;base64,iVBORwOKGO=" /> -->
     <link rel="icon" href="/favicon.ico" />
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <link href="style.css" rel="stylesheet">
     <!-- <script type="module">
-      import init, {
-        say_hello_from_rust,
-        start,
-      } from './pkg/massivelive_fun.js';
-      async function run() {
-        await init();
-        start();
-        say_hello_from_rust();
-      }
-      run();
+        import init, {
+            say_hello_from_rust,
+            start,
+        } from './pkg/massivelive_fun.js';
+        async function run() {
+            await init();
+            start();
+            say_hello_from_rust();
+        }
+        run();
     </script> -->
-    <title>MASSIVE 🔥</title>
-  </head>
-  <body>
+    <title>MASSIVELIVEFUN</title>
+</head>
+
+<body>
     <section class="section">
-      <div class="container">{% block content %} {% endblock %}</div>
+        <div class="container">{% block content %} {% endblock %}</div>
     </section>
     <canvas id=rustCanvas height="150" width="150"></canvas>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>
