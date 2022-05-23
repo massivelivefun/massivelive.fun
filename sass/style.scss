@@ -2,15 +2,15 @@ $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
 html {
-    background-color: black;
+    background-color: green;
 }
 
 section {
-    background-color: black;
+    background-color: orange;
 }
 
 h1 {
-  position: center;
+    position: center;
 }
 
 canvas {
@@ -18,14 +18,15 @@ canvas {
 }
 
 body {
-  background-color: blue;
-  color: $primary-color;
-  font: 100% $font-stack;
-  margin: 0;
-  overflow: hidden;
+    background-color: blue;
+    color: $primary-color;
+    font: 100% $font-stack;
+    margin: 0;
+    overflow: hidden;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: #ddd;
     text-decoration: none;
 }
