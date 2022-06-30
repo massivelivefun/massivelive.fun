@@ -24,7 +24,6 @@ render_emoji = true
 [extra]
 # Put all your custom variables here
 author = "Matthew Lance Fuller"
-description = "A personal website for showcasing projects and displaying contact information."
 
 [extra.social]
 email = "matthewlancefuller@gmail.com"
