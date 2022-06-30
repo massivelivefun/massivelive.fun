@@ -1,43 +1,60 @@
-{% extends "base.html" %} {% block content %}
-<!-- <a href="https://linktr.ee/massivelivefun"><img src="img/linktree.svg" width="10%" height="10%"></a> -->
-<h1>Mains</h1>
-<a href="{{ config.extra.social.linktr.ee }}">
-    <p>linktr.ee</p>
-</a>
-<a href="{{ config.extra.social.dezzyne }}">
-    <p>dezzyne</p>
-</a>
-<a href="{{ config.extra.social.github }}">
-    <p>github</p>
-</a>
-<br>
-<h1>Shops</h1>
-<a href="{{ config.extra.social.booth }}">
-    <p>booth</p>
-</a>
-<a href="{{ config.extra.social.gumroad }}">
-    <p>gumroad</p>
-</a>
-<br>
-<h1>Socials</h1>
-<a href="{{ config.extra.social.twitter }}">
-    <p>twitter</p>
-</a>
-<a href="{{ config.extra.social.spotify }}">
-    <p>spotify</p>
-</a>
-<a href="{{ config.extra.social.youtube }}">
-    <p>youtube</p>
-</a>
-<a href="{{ config.extra.social.soundcloud }}">
-    <p>soundcloud</p>
-</a>
-<a href="{{ config.extra.social.twitch }}">
-    <p>twitch</p>
-</a>
-<br>
-<h1>Support</h1>
-<a href="{{ config.extra.social.patreon }}">
-    <p>patreon</p>
-</a>
-{% endblock content %}
+{% extends "base.html" -%}
+
+{% block title %}{{super()}}{% endblock -%}
+
+{% block container %}
+<h1>MASSIVELIVEFUN</h1>
+<!-- welcome to what i do -->
+<section id="intro">
+    <p>HOME</p>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h1 class="glitch move-right" data-text="Mains">Mains</h1>
+        <a href="{{config.extra.social.linktr.ee}}">
+            <p>linktr.ee</p>
+        </a>
+        <a href="{{config.extra.social.dezzyne}}">
+            <p>dezzyne</p>
+        </a>
+        <a href="{{config.extra.social.github}}">
+            <p>github</p>
+        </a>
+        <br>
+        <h1>Shops</h1>
+        <a href="{{config.extra.social.booth}}">
+            <p>booth</p>
+        </a>
+        <a href="{{config.extra.social.gumroad}}">
+            <p>gumroad</p>
+        </a>
+        <br>
+        <h1>Socials</h1>
+        <a href="{{config.extra.social.twitter}}">
+            <p>twitter</p>
+        </a>
+        <a href="{{config.extra.social.spotify}}">
+            <p>spotify</p>
+        </a>
+        <a href="{{config.extra.social.youtube}}">
+            <p>youtube</p>
+        </a>
+        <a href="{{config.extra.social.soundcloud}}">
+            <p>soundcloud</p>
+        </a>
+        <a href="{{config.extra.social.twitch}}">
+            <p>twitch</p>
+        </a>
+        <br>
+        <h1>Support</h1>
+        <a href="{{config.extra.social.patreon}}">
+            <p>patreon</p>
+        </a>
+    </div>
+</section>
+<canvas id="rust-canvas" height="150" width="150"></canvas>
+{% endblock -%}
+
+{% block scripts %}
+{% endblock -%}
