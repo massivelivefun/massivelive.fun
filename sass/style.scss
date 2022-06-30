@@ -17,12 +17,47 @@ canvas {
     // background-color: red;
 }
 
+#intro {
+    height: 100vh;
+    background-color: brown;
+}
+
+.push-right {
+    left: 50px;
+    position: absolute;
+}
+
+nav#main-nav a {
+    padding: 10px;
+}
+
+nav#social-nav a i {
+    color: white;
+}
+
+nav#social-nav {
+    background-color: #aaa;
+}
+
+nav#social-nav a abbr {
+    display: none;
+}
+
+nav#social-nav a span {
+    display: none;
+    float: inline-end;
+}
+
+nav#social-nav a:hover>span {
+    display: block;
+}
+
 body {
     // background-color: blue;
     color: $primary-color;
     font: 100% $font-stack;
     margin: 0;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 a,
