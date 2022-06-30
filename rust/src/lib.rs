@@ -18,7 +18,7 @@ pub fn say_hello_from_rust() {
 #[wasm_bindgen]
 pub fn start() {
     let document = web_sys::window().unwrap().document().unwrap();
-    let canvas = document.get_element_by_id("rustCanvas").unwrap();
+    let canvas = document.get_element_by_id("rust-canvas").unwrap();
     let canvas: web_sys::HtmlCanvasElement = canvas
         .dyn_into::<web_sys::HtmlCanvasElement>()
         .map_err(|_| ())
