@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "description": "A personal website for showcasing projects and displaying contact information.",
-  "license": "MIT, Apache 2.0, or BSD3",
+  "license": "MIT or Apache 2.0",
   "main": "./website/static/index.js",
   "repository": {
     "type": "git",
