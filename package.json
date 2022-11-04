@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/massivelivefun/massivelive.fun.git"
   },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.11"
+  },
   "scripts": {
     "build": "webpack --mode production",
     "cleanup-pkg": "rm -rf ./scripts/pkg && rm -rf ./public/pkg",
