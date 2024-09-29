@@ -12,7 +12,7 @@
   },
   "engines": {
     "npm": "please-use-yarn",
-    "yarn": ">= 1.22.11"
+    "yarn": ">= 1.22.10"
   },
   "scripts": {
     "build": "webpack --mode production",
